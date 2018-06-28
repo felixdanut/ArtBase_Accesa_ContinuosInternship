@@ -1,0 +1,62 @@
+.artB-TabbedNavigation {
+    display: flex;
+}
+
+.artB-TabbedNavigation-Portal {
+    grid-area: header;
+    background-color: rgb(33, 208, 231);
+    display: flex;
+    justify-content: space-around;
+}
+
+.artB-TabContainer {
+    flex: 1;
+}
+
+.artB-TabContainer-Portal {
+    display: flex;
+    align-items: center;
+}
+
+.artB-Tab {
+    padding: 0.28rem;
+    background-color: rgb(33, 208, 231);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.artB-Tab-active {
+    color: rgb(116, 116, 116);
+    box-shadow: inset 0px -4px 2px -2px rgb(116, 116, 116);
+}
+
+.artB-Tab-Portal {
+    padding: 1.28rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.artB-Tab-Portal-active {
+    color: rgb(116, 116, 116);
+    box-shadow: inset 0px -6px 2px -2px rgb(116, 116, 116);
+}
+
+.artB-Icon {
+    padding-right: 0.7rem;
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 white);
+    filter: opacity(.15) drop-shadow(0 0 0 white);
+    margin-left: -0.4rem;
+}
+
+.artB-Icon-active {
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 rgb(116, 116, 116));
+    filter: opacity(.4) drop-shadow(0 0 0 rgb(116, 116, 116));
+}

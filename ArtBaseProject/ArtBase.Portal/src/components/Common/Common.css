@@ -1,0 +1,28 @@
+.artB-Logo {
+    grid-area: logo;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.artB-ImageLogo {
+    overflow: auto;
+    width: 95%;
+    height: 76%;
+    margin-top: 0.5rem;
+    margin-bottom: auto;
+}
+
+.artB-DivAddButton {
+    position: fixed;
+    top: 84%;
+    left: 77%;
+}
+
+.artB-Content .artB-AddButton {
+    font-size: 2.5rem;
+    background-color: rgb(33, 208, 231);
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 0.4rem;
+}

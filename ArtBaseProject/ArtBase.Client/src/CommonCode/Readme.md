@@ -1,0 +1,1 @@
+This is just a library containing some common code, such as a loading spinner, a search bar and some services for my Coontinous Internship project.

@@ -1,0 +1,54 @@
+.artB-TagsSideBar {
+    grid-area: rightsidebar;
+    border-top-style: double;
+    padding-top: 0.1rem;
+    border-top-color: rgb(33, 208, 231);
+    border-top-width: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artB-TagsSideBar .artB-Title {
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    margin: 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    color: orangered;
+    align-self: center;
+}
+
+.artB-TagsSideBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -0.3rem;
+    margin-right: 0.4rem;
+    margin-left: -0.8rem;
+}
+
+.artB-TagsSideBar li {
+    background-color: rgb(33, 208, 231);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.35rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.artB-TagsSideBar li a {
+    text-decoration: none;
+    color: azure;
+}
+
+.artB-TagsSideBar li:hover {
+    background-color: rgb(23, 150, 167);
+    cursor: pointer;
+}
+
+.artB-TagsSideBar .artB-ActiveTag {
+    background-color: rgb(23, 150, 167);
+    color: white;
+}

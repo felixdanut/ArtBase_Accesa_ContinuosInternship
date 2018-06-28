@@ -1,0 +1,261 @@
+.artB-InputForm {
+    padding: 0.2rem;
+    display: flex;
+}
+
+.artB-Input {
+    height: 1.2rem;
+    margin-top: 0.31rem;
+    width: 85%;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.artB-DropDownSelect {
+    height: 1.6rem;
+    margin-top: 0.31rem;
+    width: 74.4%;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.artB-Text {
+    font-family: Sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.4rem;
+    padding-left: 0.1rem;
+}
+
+.artB-DropDown {
+    padding: 0.2rem;
+    display: flex;
+}
+
+.artB-Button {
+    background-color: rgb(33, 208, 231);
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 1.1rem 1.9rem;
+    padding: 0.55rem 1rem;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 0 4px #999;
+    position: inherit;
+}
+
+.artB-SaveButton {
+    float: right;
+}
+
+.artB-Button:hover {
+    background-color: #06a9e0;
+}
+
+.artB-Ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.artB-Ripple:hover {
+    background: #06a9e0 radial-gradient(circle, transparent 0.8%, #06a9e0 1%) center/15000%;
+}
+
+.artB-Ripple:active {
+    background-color: #90c9f8;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.artB-SearchBar {
+    overflow: hidden;
+}
+
+.artB-SearchBar input[type=text] {
+    padding: 6px;
+    margin-top: 0.7rem;
+    font-size: 1.15rem;
+    height: 1.05rem;
+    width: 19rem;
+}
+
+.artB-SearchBar button {
+    padding: 6px 10px;
+    background: #ddd;
+    font-size:  1rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -0.05rem;
+}
+
+.artB-SearchBar button:hover {
+    background: #ccc;
+}
+
+.artB-spinner {
+    margin: 100px auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+.artB-cube1, .artB-cube2 {
+    background-color: #333;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.artB-cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+    25% { 
+        transform: translateX(42px) rotate(-90deg) scale(0.5);
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+div.ReactTags__tags {
+    flex: 0 0 calc(100% - 57px);
+    position: relative;
+}
+
+div.ReactTags__selected {
+	display: flex;
+    flex-wrap: wrap;
+}
+	
+span.ReactTags__tag {     
+	order: 1;
+    opacity: 1;
+    display: block; 
+}
+	
+div.ReactTags__tagInput {     
+	order: 0;
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 0.31rem;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+input.ReactTags__tagInputField {
+    width: 100%;
+}
+
+div.ReactTags__selected span.ReactTags__tag {
+    border: 1px solid #ddd;
+    background: rgb(33, 208, 231);
+    font-size: 0.7rem;
+    color: black;
+    display: inline-block;
+    padding: 0.25rem;
+    margin: 0.7rem 0.4rem -0.4rem 0;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+div.ReactTags__selected a.ReactTags__remove {
+    color: rgb(116, 116, 116);
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+div.ReactTags__suggestions {
+    position: absolute;
+}
+
+div.ReactTags__suggestions ul {
+    list-style-type: none;
+    box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+    background: white;
+    margin-top: 0.18rem;
+}
+
+div.ReactTags__suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 0.2rem 0.4rem;
+    margin-left: -2.5rem;
+    font-size: 0.9rem;
+}
+
+div.ReactTags__suggestions li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+}
+
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+}
+
+.artB-Notification {
+    display: flex;
+}
+
+.artB-SpanError {
+    color: #f10000;
+    background-color: #ffbbbbd4;
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 95%;
+    margin-left: 0.43em;
+    margin-top: 0.6rem;
+    padding-left: 1.2rem;
+    font-weight: 500;
+    white-space: pre-wrap;
+}
+
+.artB-SpanSuccess {
+    color: #2d7d2ded;
+    background-color: #c9ffbbd4;
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 95%;
+    margin-left: 0.43em;
+    margin-top: 0.6rem;
+    padding-left: 1.2rem;
+    font-weight: 500;
+    white-space: pre-wrap;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: rgb(33, 208, 231);
+    outline: 0 none;
+}

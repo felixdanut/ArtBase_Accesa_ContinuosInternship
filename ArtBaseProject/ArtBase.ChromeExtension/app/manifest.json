@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "ArtBase Solutions",
+  "description": "This extension lets you save and search bookmarks that are important to you and to your colleagues.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "https://secure.flickr.com/",
+    "http://localhost/"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,74 @@
+.artB-Content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    border-left-style: solid;
+    padding-top: 0.1rem;
+    border-left-color: rgb(33, 208, 231);
+    border-left-width: 2px;
+    border-right: solid;
+    border-right-color: rgb(33, 208, 231);
+    border-right-width: 2px;
+    position: relative;
+}
+
+.artB-Content .artB-SearchBar {
+    align-self: center;
+}
+
+.artB-Content .artB-SearchBar input[type=text] {
+    width: 40rem;
+    font-size: 1rem;
+}
+
+.artB-Content .artB-SearchBar button {
+    padding: 7.5px 10px;
+    background: #ddd;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: -0.0rem;
+    margin-bottom: 1.5rem;
+}
+
+.artB-Bookmark {
+    padding: 1rem;
+    display: flex;
+    box-shadow: 0 0.8px 1px 0 rgba(3, 71, 88, 0.08), 0 1px 11px 0 rgba(0, 72, 82, 0.03)
+}
+
+.artB-Bookmark img {
+    width: 11rem;
+    height: 9rem;
+    margin-bottom: .4rem;
+    margin-left: 1.3rem;
+}
+
+.artB-Bookmark .material-icons {
+    margin-left: auto;
+    align-self: center;
+    cursor: pointer;
+}
+
+.artB-Bookmark .artB-Summary {
+    margin-bottom: 1rem;
+}
+
+.artB-Bookmark .artB-Summary h4 {
+    margin-left: 1rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.artB-Bookmark .artB-Summary h4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.artB-Bookmark .artB-Summary span {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,22 @@
+.artB-Portal {
+    display: grid;
+    grid-template-columns: 13% 1fr 13%;
+    grid-template-rows: 7rem auto 1fr;
+    grid-template-areas: 
+    "logo header ."
+    "leftsidebar content rightsidebar"
+    ". content ."
+}
+
+@media (max-width: 600px) {
+    .artB-Portal {
+        grid-template-columns: auto;
+        grid-template-rows: 10rem auto 1fr;
+        grid-template-areas: 
+        "logo"
+        "header"
+        "leftsidebar"
+        "content"
+        "rightsidebar"
+    }
+}

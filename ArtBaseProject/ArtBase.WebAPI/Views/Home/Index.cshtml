@@ -1,0 +1,38 @@
+﻿<div class="jumbotron">
+    <h2>ArtBase</h2>
+    <br />
+
+    <div class="table-class">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="success">
+                    <th>
+                        Social Login
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="button" id="btnGoogleLogin"
+                               value="Login with Google" class="btn btn-primary btn-lg" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/GoogleAuthentification.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        getAccessToken();
+
+        $('#btnGoogleLogin').click(function () {
+            window.location.href = "/api/Account/ExternalLogin?provider=Google&response_type=token&client_id=self&redirect_uri=http%3A%2F%2Flocalhost%3A51872%2FHome%2FIndex&state=GerGr5JlYx4t_KpsK57GFSxVueteyBunu02xJTak5m01";
+        });
+
+    })
+</script>
